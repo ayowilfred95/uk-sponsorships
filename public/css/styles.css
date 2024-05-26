@@ -1,0 +1,77 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 20px;
+    background-color: #f4f4f4;
+  }
+  
+  .container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 20px auto;
+  }
+  
+  .filters {
+    margin-bottom: 20px;
+    display: flex;
+    flex-wrap: wrap;
+  }
+  
+  select {
+    padding: 10px;
+    margin-right: 10px;
+    font-size: 16px;
+    flex: 1 1 200px; /* Allows the select boxes to shrink/grow */
+    margin-bottom: 10px;
+  }
+  
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+  }
+  
+  table, th, td {
+    border: 1px solid #ddd;
+  }
+  
+  th, td {
+    padding: 8px;
+    text-align: left;
+  }
+  
+  th {
+    background-color: #f2f2f2;
+  }
+  
+  /* Responsive styles */
+  @media (max-width: 768px) {
+    th, td {
+      padding: 6px;
+      font-size: 14px;
+    }
+  
+    h1 {
+      font-size: 1.5rem;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    th, td {
+      padding: 4px;
+      font-size: 12px;
+    }
+  
+    h1 {
+      font-size: 1.2rem;
+    }
+  
+    .filters {
+      flex-direction: column;
+    }
+  
+    select {
+      margin-right: 0;
+    }
+  }
+  
